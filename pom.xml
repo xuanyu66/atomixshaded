@@ -4,7 +4,7 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>com.yangxin</groupId>
+    <groupId>com.github.xuanyu66</groupId>
     <artifactId>atomix-shaded</artifactId>
     <version>1.0</version>
     <packaging>jar</packaging>
@@ -54,7 +54,7 @@
                             <relocations>
                                 <relocation>
                                     <pattern>io.netty</pattern>
-                                    <shadedPattern>com.yangxin.netty</shadedPattern>
+                                    <shadedPattern>com.github.xuanyu66.netty</shadedPattern>
                                 </relocation>
                             </relocations>
                             <shadedArtifactAttached>false</shadedArtifactAttached>
