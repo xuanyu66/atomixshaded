@@ -1,0 +1,25 @@
+name: Test
+
+on:
+  push:
+    branches:
+      - master
+  workflow_dispatch:
+
+jobs:
+  test:
+    runs-on: ${{ matrix.operating-system }}
+    strategy:
+      fail-fast: false
+      matrix:
+        operating-system: [ubuntu-latest, windows-latest, macos-latest]
+    steps:
+      - name: set up ticloud
+        uses: tidbcloud/setup-tidbcloud-cli@v0
+        with:
+          version: v0.2.6
+          api_public_key: ${{ secrets.TIDB_CLOUD_API_PUBLIC_KEY }}
+          api_private_key: ${{ secrets.TIDB_CLOUD_API_PRIVATE_KEY }}
+      - name: version
+        run: |
+          ticloud version
