@@ -1,5 +1,7 @@
 github:
     branch:
-       blockList:
-           - "xuanyu66-patch.*"
-           - ".*_blackList"
+        blockList:
+            - "xuanyu66-patch.*"
+            - ".*_blackList"
+        allowList:
+           - "xuanyu66-patch-2"
