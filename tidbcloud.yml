@@ -1,0 +1,5 @@
+github:
+    branch:
+       blockList:
+           - "xuanyu66-patch.*"
+           - ".*_blackList"
