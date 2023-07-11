@@ -4,4 +4,4 @@ github:
             - "xuanyu66-patch-2"
             - ".*_blackList"
         allowList:
-           - "xuanyu66-patch-2"
+           - "xuanyu66-patch-1"
