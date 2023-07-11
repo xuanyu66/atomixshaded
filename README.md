@@ -1,1 +1,1 @@
-# atomixs
+# atomix
